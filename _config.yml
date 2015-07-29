@@ -1,0 +1,20 @@
+# Site settings
+title: Midwest Access Coalition
+email: your-email@domain.com
+description: > #
+  The Midwest Access Coalition provides accommodation and support to those who travel to Chicago to access a safe, legal abortion when prohibitive legislation limits access closer to home.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+collections:
+  announcements:
+    output: true
+  # - resources:
+  #   output: true
+  # - connect:
+  #   output: true

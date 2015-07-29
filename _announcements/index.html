@@ -1,0 +1,18 @@
+<!-- ---
+layout: default
+title: Announcements
+category: announcement
+---
+<div>
+{% raw %}
+{% for announcement in site.announcements %}
+  <div class="post">
+    <h3 class="title"><a href="{{ announcment.url }}">{{ announcement.title }}</a></h3>
+    <p class="meta">Date: {{ announcement.date }}</p>
+    <div class="entry">
+      {{ announcement.content | strip_html | truncatewords: 100 }}
+    </div>
+  </div>
+{% endfor %}
+{% endraw %}
+</div> -->
