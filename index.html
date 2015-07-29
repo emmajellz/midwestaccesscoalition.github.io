@@ -6,14 +6,25 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
+  {% for resouce in site.categories.resources %}
+    <p>{{resource.output}}</p>
+    <div class="post">
+      <h3 class="title"><a href="{{ resource.url }}">{{ site.collections.resources }}</a></h3>
+      <p class="meta">Date: {{ resource.date }}</p>
+<!--     <div class="entry">
+      {{ announcement.content | strip_html | truncatewords: 100 }}
+    </div> -->
+    </div>
+  {% endfor %}
+
   <ul class="post-list">
     {% for resource in site.categories.resources %}
       {{ resource.output }}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="meta">{{ resource.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="{{ resource.url | prepend: site.baseurl }}">{{ site.collections.resources }}</a>
         </h2>
       </li>
     {% endfor %}
