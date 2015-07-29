@@ -2,7 +2,7 @@
 layout: event
 title:  "Easy as Pie"
 date:   2015-07-21 21:29:42
-categories: event fundraiser
+categories: announcements
 ---
 
 ##a fundraiser for abortion access
