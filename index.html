@@ -23,11 +23,11 @@ layout: default
   {% for announcement in site.categories.announcements %}
     <p>{{announcement.output}}</p>
   <div class="post">
-    <h3 class="title"><a href="{{ announcment.url }}">{{ site.collections.announcements }}</a></h3>
+    <h3 class="title"><a href="{{ announcement.url }}">{{ site.collections.announcements }}</a></h3>
     <p class="meta">Date: {{ announcement.date }}</p>
-    <div class="entry">
+<!--     <div class="entry">
       {{ announcement.content | strip_html | truncatewords: 100 }}
-    </div>
+    </div> -->
   </div>
   {% endfor %}
 <!-- END -->
