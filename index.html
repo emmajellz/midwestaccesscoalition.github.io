@@ -17,7 +17,7 @@ layout: default
     </div>
   {% endfor %}
 
-  <ul class="post-list">
+<!--   <ul class="post-list">
     {% for resource in site.categories.resources %}
       {{ resource.output }}
       <li>
@@ -29,7 +29,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
+ -->
 <!-- THIS BREAKS THE HOME PAGE -->
   {% for announcement in site.categories.announcements %}
     <p>{{announcement.output}}</p>
@@ -42,7 +42,7 @@ layout: default
   </div>
   {% endfor %}
 <!-- END -->
-
+<!-- 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  
+   -->
 </div>
