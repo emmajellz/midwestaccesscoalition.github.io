@@ -8,6 +8,12 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+pages_list:
+	Donors: '/donors'
+	Our Team: '/team'
+	Announcements: '/announcements'
+	Values & Goals: '/values-goals'
+
 # Build settings
 markdown: kramdown
 
