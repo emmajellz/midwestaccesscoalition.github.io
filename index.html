@@ -6,43 +6,23 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  {% for resouce in site.categories.resources %}
+  {% for resource in site.categories.resources %}
     <p>{{resource.output}}</p>
-    <div class="post">
-      <h3 class="title"><a href="{{ resource.url }}">{{ site.collections.resources }}</a></h3>
-      <p class="meta">Date: {{ resource.date }}</p>
-<!--     <div class="entry">
-      {{ announcement.content | strip_html | truncatewords: 100 }}
-    </div> -->
-    </div>
+  <div class="post">
+    <h3 class="title"><a href="{{ resource.url }}">{{ resource.title }}</a></h3>
+    <p class="meta">Date: {{ resource.date }}</p>
+  </div>
   {% endfor %}
 
-<!--   <ul class="post-list">
-    {% for resource in site.categories.resources %}
-      {{ resource.output }}
-      <li>
-        <span class="meta">{{ resource.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a href="{{ resource.url | prepend: site.baseurl }}">{{ site.collections.resources }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
- -->
-<!-- THIS BREAKS THE HOME PAGE -->
   {% for announcement in site.categories.announcements %}
     <p>{{announcement.output}}</p>
   <div class="post">
-    <h3 class="title"><a href="{{ announcement.url }}">{{ site.collections.announcements }}</a></h3>
+    <h3 class="title"><a href="{{ announcement.url }}">{{ announcement.title }}</a></h3>
     <p class="meta">Date: {{ announcement.date }}</p>
-<!--     <div class="entry">
-      {{ announcement.content | strip_html | truncatewords: 100 }}
-    </div> -->
+    <div class="entry">
+      {{ announcement.content | strip_html | truncatewords: 20 }}
+    </div>
   </div>
   {% endfor %}
-<!-- END -->
-<!-- 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-   -->
+
 </div>

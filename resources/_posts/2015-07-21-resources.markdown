@@ -2,7 +2,7 @@
 layout: post
 title:  "Resources"
 date:   2015-07-21 21:29:42
-categories: resources advocacy support organizations
+categories: resources
 ---
 
 And a big SHOUT OUT to our lovely friends:
