@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Resources"
+title:  Abortion Support Network
 date:   2015-07-21 21:29:42
 categories: resources
+link: https://www.abortionsupport.org.uk/
 ---
 
-And a big SHOUT OUT to our lovely friends:
 
-* [Abortion Support Network](https://www.abortionsupport.org.uk/)
-* [Center for Reproductive Rights](http://www.reproductiverights.org/)
-* [Chicago Abortion Fund](http://chicagoabortionfund.com/)
 * [Feminist Majority](http://feministmajority.org/)
 * [Feministing](http://feministing.com/)
 * [FURIE -- Feminist Uprising to Resist Inequality and Exploitation](https://www.facebook.com/chicagofurie)

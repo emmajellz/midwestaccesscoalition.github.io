@@ -1,0 +1,11 @@
+---
+layout: join
+title: "Join Us"
+permalink: /join/
+---
+
+Want to join our coalition or get involved?
+
+Sign up for our mailing list.
+
+

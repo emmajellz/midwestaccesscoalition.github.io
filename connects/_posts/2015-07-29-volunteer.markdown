@@ -1,6 +1,6 @@
 ---
-layout: join
-title:  "Join the coalition"
+layout: post
+title:  "Volunteer"
 categories: connects
 ---
 

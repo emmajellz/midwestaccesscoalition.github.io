@@ -1,0 +1,21 @@
+---
+title: Resources
+layout: page
+permalink: /resources/
+---
+
+<h3>These organizations are awesomes resources for those who need abortion access.</h3>
+
+
+<div>
+
+<ul>
+	{% for resource in site.categories.resources %}
+		<li>
+	  	<a href="{{ resource.link }}"> {{ resource.title }} </a>
+	  	<p class="description">{{ resource.content }}</p>
+	  </li>
+	{% endfor %}
+</ul>
+
+</div>

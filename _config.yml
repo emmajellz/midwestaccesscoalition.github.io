@@ -22,5 +22,5 @@ collections:
     output: true
   resources:
     output: true
-  # - connect:
-  #   output: true
+  connects:
+    output: true

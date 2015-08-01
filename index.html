@@ -2,27 +2,48 @@
 layout: default
 ---
 
-<div class="home">
+<!-- <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
   {% for resource in site.categories.resources %}
     <p>{{resource.output}}</p>
-  <div class="post">
-    <h3 class="title"><a href="{{ resource.url }}">{{ resource.title }}</a></h3>
-    <p class="meta">Date: {{ resource.date }}</p>
-  </div>
+    <div class="post">
+      <h3 class="title"><a href="{{ resource.url }}">{{ resource.title }}</a></h3>
+      <p class="meta">Date: {{ resource.date }}</p>
+    </div>
   {% endfor %}
 
   {% for announcement in site.categories.announcements %}
     <p>{{announcement.output}}</p>
-  <div class="post">
-    <h3 class="title"><a href="{{ announcement.url }}">{{ announcement.title }}</a></h3>
-    <p class="meta">Date: {{ announcement.date }}</p>
-    <div class="entry">
-      {{ announcement.content | strip_html | truncatewords: 20 }}
+    <div class="post">
+      <h3 class="title"><a href="{{ announcement.url }}">{{ announcement.title }}</a></h3>
+      <p class="meta">Date: {{ announcement.date }}</p>
+      <div class="entry">
+        {{ announcement.content | strip_html | truncatewords: 20 }}
+      </div>
     </div>
-  </div>
   {% endfor %}
 
-</div>
+
+  {% for connect in site.categories.connects %}
+  
+  <p>{{connect.output}}</p>
+  
+  <div class="post">
+  
+    <h3 class="title">
+      <a href="{{ connects.url }}">{{ connects.title }}</a>
+    </h3>
+  
+    <p class="meta">Date: {{ connects.date }}</p>
+  
+    <div class="entry"> 
+      {{ connects.content | strip_html | truncatewords: 20 }}
+    </div>
+  
+  </div>
+
+{% endfor %}
+
+</div> -->
