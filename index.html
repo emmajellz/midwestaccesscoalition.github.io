@@ -2,43 +2,12 @@
 layout: default
 ---
 
-<div class="page-content">
+<div class="content-box">
 
   {% for page in site.categories.pages %}
-      <h3 class="title">{{ page.vision }}</h3>
-      <h3 class="title">{{ page.mission }}</h3>
+      <section>{{ page.vision }}</section>
+      <section>{{ page.mission }}<section>
   {% endfor %}
-
-  <!-- {% for announcement in site.categories.announcements %}
-    <p>{{announcement.output}}</p>
-    <div class="post">
-      <h3 class="title"><a href="{{ announcement.url }}">{{ announcement.title }}</a></h3>
-      <p class="meta">Date: {{ announcement.date }}</p>
-      <div class="entry">
-        {{ announcement.content | strip_html | truncatewords: 20 }}
-      </div>
-    </div>
-  {% endfor %}
-
-
-  {% for connect in site.categories.connects %}
-  
-  <p>{{connect.output}}</p>
-  
-  <div class="post">
-  
-    <h3 class="title">
-      <a href="{{ connects.url }}">{{ connects.title }}</a>
-    </h3>
-  
-    <p class="meta">Date: {{ connects.date }}</p>
-  
-    <div class="entry"> 
-      {{ connects.content | strip_html | truncatewords: 20 }}
-    </div>
-  
-  </div>
-
-{% endfor %} -->
 
 </div>
+

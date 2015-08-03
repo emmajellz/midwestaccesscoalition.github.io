@@ -41,7 +41,6 @@
         background-color: $off-white;
         line-height: $base-line-height;
         padding: 10px;
-        // margin: 40px 0;
         border: $chartreuse-border;
         &:hover {
             padding-top: 20px;
@@ -208,6 +207,24 @@
 }
 
 
+.content-box {
+    background-color: $background-color;
+    border: $chartreuse-border;
+    margin: 30px;
+    padding: 20px;
+    // section {
+    //     &:after {
+    //     display: block;
+    //     height: 1px;
+    //     border: 0;
+    //     border-top: 1px solid $purple;
+    //     margin: 0;
+    //     padding: 0;
+    // }
+    // }
+}
+
+
 
 /**
  * Posts
@@ -286,7 +303,7 @@ height: 100%;
 #footer
 {
 position: relative;
-margin-top: -3em;
+margin-top: -2em;
 background: $chartreuse;
 }
 

@@ -172,8 +172,9 @@ pre {
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
+    margin: 0 auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
@@ -197,6 +198,20 @@ pre {
         content: "";
         display: table;
         clear: both;
+    }
+}
+
+/**
+ * Linebreak
+ */
+%linebreak {
+    &:after {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $purple;
+        margin: 0;
+        padding: 0;
     }
 }
 
