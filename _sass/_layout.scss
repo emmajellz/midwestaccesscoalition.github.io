@@ -23,10 +23,11 @@
     &:visited {
         color: $grey-color-dark;
     }
+    @extend %clearfix;
 }
 
 .site-nav {
-    float: right;
+    display: block;
     line-height: 56px;
     // border: $chartreuse solid 1px;
     // padding: 0 10px;
