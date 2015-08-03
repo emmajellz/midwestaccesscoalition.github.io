@@ -2,19 +2,14 @@
 layout: default
 ---
 
-<!-- <div class="home">
+<div class="page-content">
 
-  <h1 class="page-heading">Posts</h1>
-
-  {% for resource in site.categories.resources %}
-    <p>{{resource.output}}</p>
-    <div class="post">
-      <h3 class="title"><a href="{{ resource.url }}">{{ resource.title }}</a></h3>
-      <p class="meta">Date: {{ resource.date }}</p>
-    </div>
+  {% for page in site.categories.pages %}
+      <h3 class="title">{{ page.vision }}</h3>
+      <h3 class="title">{{ page.mission }}</h3>
   {% endfor %}
 
-  {% for announcement in site.categories.announcements %}
+  <!-- {% for announcement in site.categories.announcements %}
     <p>{{announcement.output}}</p>
     <div class="post">
       <h3 class="title"><a href="{{ announcement.url }}">{{ announcement.title }}</a></h3>
@@ -44,6 +39,6 @@ layout: default
   
   </div>
 
-{% endfor %}
+{% endfor %} -->
 
-</div> -->
+</div>
