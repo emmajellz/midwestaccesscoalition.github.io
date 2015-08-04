@@ -1,0 +1,7 @@
+---
+layout: post
+title:  FURIE - Feminist Uprising to Resist Inequality and Exploitation
+date:   2015-07-21 21:29:42
+categories: resources
+link: https://www.facebook.com/chicagofurie
+---

@@ -1,0 +1,7 @@
+---
+layout: post
+title:  Illinois Choice Action Team
+date:   2015-07-21 21:29:42
+categories: resources
+link: http://www.ilchoiceactionteam.org/
+---

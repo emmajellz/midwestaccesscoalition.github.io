@@ -9,7 +9,12 @@ layout: page
 
 <div>
 
-<ul>
+{% assign sorted_resource_posts = site.categories.resources | sort: 'title', 'last' %}
+{% for post in sorted_resource_posts %}
+   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+<!-- <ul>
 	{% for resource in site.categories.resources %}
 		<li>
 	  	<a href="{{ resource.link }}"> {{ resource.title }} </a>
@@ -17,5 +22,5 @@ layout: page
 	  </li>
 	{% endfor %}
 </ul>
-
+ -->
 </div>
