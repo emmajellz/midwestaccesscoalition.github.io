@@ -5,7 +5,8 @@ $site-background: "../img/gplaypattern.png";
 
 //COLOR LIBRARY
 $chartreuse: #cccc33;
-$purple: #cc00cc;
+$purple: #993366;
+// $purple: #cc00cc;
 $coral: #ffcc99;
 $seafoam-green: #99cc99;
 $dark-grey: #282828;
@@ -109,7 +110,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($purple, 15%);
     }
 
     &:hover {
