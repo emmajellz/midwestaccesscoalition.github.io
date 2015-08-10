@@ -13,6 +13,21 @@
         </svg>
       </a>
 
+
+<!--     <ul>
+    {% for node in site.pages %}
+      {% if node.url contains base_url %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        {% assign filename = node_url_parts | last %}
+        {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
+          <li><a href='{{node.url}}'>{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul> -->
+
+
       <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
@@ -26,7 +41,6 @@
   &nbsp;&nbsp;&nbsp;
   <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
 {% endfor %}
-</h3>
 
 <!--     {% assign pages = site.pages | sort:"weight"  %}
     <ul>
