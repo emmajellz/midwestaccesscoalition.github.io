@@ -5,8 +5,8 @@ layout: default
 <div class="content-box">
 
   {% for page in site.categories.pages %}
-      <section>{{ page.vision }}</section>
-      <section>{{ page.mission }}<section>
+      <p>{{ page.vision }}</p>
+      <p>{{ page.mission }}</p>
   {% endfor %}
 
   <a href="{% post_url 2015-08-02-join-us %}">Join Us</a>
