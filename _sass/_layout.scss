@@ -11,6 +11,18 @@
     padding-top: 20px;
     position: relative;
     width: 100%;
+    .top-fixed-btns {
+        @include box-link-styles;
+        // float: right;
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        margin-left: 20px;
+        &:nth-child(2) {
+            top: 80px;
+        } 
+    }
 }
 
 .site-title {
@@ -42,11 +54,7 @@
     }
 
     .page-link {
-        color: $text-color;
-        background-color: $off-white;
-        line-height: $base-line-height;
-        padding: 10px;
-        border: $chartreuse-border;
+        @include box-link-styles;
         &:hover {
             padding-top: 20px;
         }

@@ -3,35 +3,9 @@
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/"><img width=200px src="img/mac-logo.png"></a>
-
-
-<!--     <ul>
-    {% for node in site.pages %}
-      {% if node.url contains base_url %}
-        {% assign node_url_parts = node.url | split: '/' %}
-        {% assign node_url_parts_size = node_url_parts | size %}
-        {% assign filename = node_url_parts | last %}
-        {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-          <li><a href='{{node.url}}'>{{node.title}}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    </ul> -->
-
-
-
-
-<!--     {% assign pages = site.pages | sort:"weight"  %}
-    <ul>
-      {% for p in pages %}
-        <li>
-          <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-            {{ p.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
- -->
+    <a class="top-fixed-btns" href="get-support">Get Support</a>
+    <a class="top-fixed-btns" href="how-to-help">How to Help</a>
+    
   </div>
 
 </header>

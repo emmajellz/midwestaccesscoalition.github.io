@@ -42,6 +42,14 @@ $on-laptop:        800px;
     }
 }
 
+@mixin box-link-styles {
+	color: $text-color;
+  background-color: $off-white;
+  line-height: $base-line-height;
+  padding: 10px;
+  border: $chartreuse-border;
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
