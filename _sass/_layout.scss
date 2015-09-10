@@ -21,7 +21,21 @@
         margin-left: 20px;
         &:nth-child(2) {
             top: 80px;
-        } 
+            @include media-query($on-palm) {
+                right: 150px;   
+                top: 9px; 
+            }
+        }
+        @include media-query($on-palm) {
+            top: 9px;
+        }
+    }
+    @include media-query($on-palm) {
+        background-color: $off-white;
+        border-bottom: $chartreuse solid 2px;
+        img {
+            display: none;
+        }
     }
 }
 
@@ -70,7 +84,7 @@
         top: 9px;
         left: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        // border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
 
@@ -126,10 +140,22 @@
     margin-bottom: $spacing-unit / 2;
 }
 
+.footer-nav {
+    display: inline-block;
+    margin-left: -30px;
+    margin-top: -140px;
+    li {
+        list-style: none;
+    }
+}
+
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    li {
+        display: inline-block;
+    }
 }
 
 .footer-col-wrapper {
@@ -186,6 +212,7 @@
 /**
  * Page content
  */
+
 .page-content {
     padding: $spacing-unit 0;
 }
@@ -242,6 +269,7 @@
 /**
  * Posts
  */
+
 .post-header {
     margin-bottom: $spacing-unit;
 }

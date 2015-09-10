@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<div class="content-box">
+<h1>We're the Midwest Access Coalition.</h1>
 
-  {% for page in site.categories.pages %}
-      <p>{{ page.vision }}</p>
-      <p>{{ page.mission }}</p>
-  {% endfor %}
+{% for page in site.categories.pages %}
+    <p>{{ page.vision }}</p>
+    <p>{{ page.mission }}</p>
+{% endfor %}
 
-  <a href="{% post_url 2015-08-02-join-us %}">Join Us</a>
-
-</div>
+<a href="{% post_url 2015-08-02-join-us %}">Join Us</a>
 

@@ -1,12 +1,13 @@
 # Site settings
 title: Midwest Access Coalition
-email: your-email@domain.com
+email: info@midwestaccesscoalition.org
 description: > #
   The Midwest Access Coalition provides accommodation and support to those who travel to Chicago to access a safe, legal abortion when prohibitive legislation limits access closer to home.
 baseurl:  # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://midwestaccesscoalition.github.io" # the base hostname & protocol for your site
+twitter_username: MidwestAccess
+github_username:  MidwestAccessCoalition
+facebook_username: midwestaccesscoalition
 
 timezone: America/Chicago
 
