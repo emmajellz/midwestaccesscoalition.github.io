@@ -9,8 +9,13 @@
 
   <div class="trigger">
     {% for page in site.pages %}
-      {% if page.title %}
-      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% if page.nav_level == "top" %}
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+      {% if page.nav_level == "nested_under_#{page.title}" %}
+        <ul>
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+        </ul>
       {% endif %}
     {% endfor %}
   </div>
