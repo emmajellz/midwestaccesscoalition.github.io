@@ -11,11 +11,11 @@
     {% for page in site.pages %}
       {% if page.nav_level == "top" %}
         <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-      {% if page.nav_level == "nested_under_#{page.title}" %}
-        <ul>
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-        </ul>
+        {% for nested_page in page.nested_pages %}
+          <ul>
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+          </ul>
+        {% endfor %}
       {% endif %}
     {% endfor %}
   </div>
