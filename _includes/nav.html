@@ -14,35 +14,15 @@
         <li role="presentation" class="dropdown">
           <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         </li>
-<!--         {% for nested_page in page.nested_pages %}
+        {% for nested_page in page.nested_pages %}
           <ul class="dropdown-menu">
-            <li>
-              <a class="page-link" href="{{ nested_page.url | prepend: site.baseurl }}">nested_page</a>
+            <li>thing
+<!--               <a class="page-link" href="{{ nested_page.url | prepend: site.baseurl }}">nested_page</a> -->
             </li>
           </ul>
-        {% endfor %} -->
+        {% endfor %}
       {% endif %}
     {% endfor %}
     </ul>
   </div>
 </nav>
-
-<!-- <div class="trigger nav">
-  <ul class="nav nav-pills">
-    <li role="presentation" class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-        Dropdown <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-
-      </ul>
-    </li>
-  </ul>
-</div>
- -->
-
-
-<!--     {% for page in site.pages_list %}
-  &nbsp;&nbsp;&nbsp;
-  <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-{% endfor %} -->
