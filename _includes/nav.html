@@ -8,18 +8,39 @@
   </a>
 
   <div class="trigger nav">
+    <ul class="nav nav-pills">
     {% for page in site.pages %}
       {% if page.nav_level == "top" %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        <li role="presentation" class="dropdown">
+          <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
 <!--         {% for nested_page in page.nested_pages %}
-          <ul>
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+          <ul class="dropdown-menu">
+            <li>
+              <a class="page-link" href="{{ nested_page.url | prepend: site.baseurl }}">nested_page</a>
+            </li>
           </ul>
         {% endfor %} -->
       {% endif %}
     {% endfor %}
+    </ul>
   </div>
 </nav>
+
+<!-- <div class="trigger nav">
+  <ul class="nav nav-pills">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+
+      </ul>
+    </li>
+  </ul>
+</div>
+ -->
+
 
 <!--     {% for page in site.pages_list %}
   &nbsp;&nbsp;&nbsp;
