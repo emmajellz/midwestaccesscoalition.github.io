@@ -13,14 +13,14 @@
       {% if page.nav_level == "top" %}
         <li role="presentation" class="dropdown">
           <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% for nested_page in page.nested_pages %}
+            <ul class="dropdown-menu">
+              <li>thing
+                <a class="page-link" href="{{ nested_page.url | prepend: site.baseurl }}">nested_page</a>
+              </li>
+            </ul>
+          {% endfor %}
         </li>
-        {% for nested_page in page.nested_pages %}
-          <ul class="dropdown-menu">
-            <li>thing
-<!--               <a class="page-link" href="{{ nested_page.url | prepend: site.baseurl }}">nested_page</a> -->
-            </li>
-          </ul>
-        {% endfor %}
       {% endif %}
     {% endfor %}
     </ul>
