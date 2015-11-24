@@ -11,25 +11,31 @@
     padding-top: 20px;
     position: relative;
     width: 100%;
-    .top-fixed-btns {
-        @include box-link-styles;
-        // float: right;
-        display: block;
-        position: fixed;
-        right: 20px;
-        top: 20px;
-        margin-left: 20px;
-        &:nth-child(2) {
-            top: 80px;
-            @include media-query($on-palm) {
-                right: 150px;   
-                top: 9px; 
-            }
-        }
-        @include media-query($on-palm) {
-            top: 9px;
-        }
+    img {
+        float: left;
     }
+    .trigger-nav {
+        float: right;
+    }
+    // .top-fixed-btns {
+    //     @include box-link-styles;
+    //     // float: right;
+    //     display: block;
+    //     position: fixed;
+    //     right: 20px;
+    //     top: 20px;
+    //     margin-left: 20px;
+    //     &:nth-child(2) {
+    //         top: 80px;
+    //         @include media-query($on-palm) {
+    //             right: 150px;   
+    //             top: 9px; 
+    //         }
+    //     }
+    //     @include media-query($on-palm) {
+    //         top: 9px;
+    //     }
+    // }
     @include media-query($on-palm) {
         background-color: $off-white;
         border-bottom: $chartreuse solid 2px;
@@ -54,6 +60,11 @@
     @include media-query($on-palm) {
         margin-left: 100px;
     }
+}
+
+.trigger-nav {
+    float: right;
+    display: inline-block;
 }
 
 .site-nav {
