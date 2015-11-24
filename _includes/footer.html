@@ -2,10 +2,9 @@
 
   <div class="wrapper">
 
-    <img class="footer-heading" width=200px src="img/mac-logo.png">
-
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
+        <img width=200px src="img/mac-logo.png">
         <ul class="contact-list">
           <li><a href="mailto:{{ site.email }}">
           <span class="icon">
@@ -14,18 +13,23 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="footer-col footer-col-3">
         <ul class="footer-nav">
-          <li><a href="">home</a></li>
+          {% for page in site.pages %}
+          <li>
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+          {% endfor %}
+<!--           <li><a href="">home</a></li>
           <li><a href="">how it works</a></li>
           <li><a href="">resources</a></li>
           <li><a href="">join us</a></li>
           <li><a href="">connect</a></li>
-          <li><a href="">team</a></li>         
+          <li><a href="">team</a></li>   -->       
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
+      <div class="footer-col  footer-col-5">
         <ul class="social-media-list">
 
           {% if site.twitter_username %}
