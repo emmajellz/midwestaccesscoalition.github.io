@@ -2,7 +2,6 @@
  * Site footer
  */
 .site-footer {
-    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 
 }
@@ -14,20 +13,15 @@
 
 .footer-nav {
     display: inline-block;
-    // margin-left: -30px;
-    // margin-top: -140px;
-    // background: red;
     li {
         list-style: none;
     }
 }
 
 .contact-list {
-    // background: $off-white;
     list-style: none;
 }
 .social-media-list {
-    // background: blue;
     list-style: none;
     margin-left: 0;
     float: right;
@@ -39,7 +33,6 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    // background: red;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -48,7 +41,6 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
-    // background: yellow;
 }
 
 .footer-col-1 {
