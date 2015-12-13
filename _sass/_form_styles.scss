@@ -9,18 +9,11 @@
 
 #contact-form {
 	input {
-		// background-color: deeppink;
 		width: 95%;
 		margin: 0 auto;
 	}
-	// background: teal;
 	border-radius: 10px;
 	margin: 1em;
-	// padding-bottom: 150px;
-}
-
-#submit-button {
-	// background-color: deeppink;
 }
 
 .indicates-required {
@@ -29,10 +22,29 @@
 
 #email-list-join {
 	float: right;
-	align: right;
+	text-align: right;
+	p {
+		font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+		font-size: 1em;
+	}
 	input {
+		font-family: Helvetica;
+		font-weight: lighter;
+		line-height: 2em;
+		text-align: right;
 		border-radius: 5px;
+		padding: 4px;
 		margin: 10px;
+		border: $purple;
+	}
+	.submit-btn {
+		float: right;
+		color: $purple;
+		background-color: $off-white;
+		&:hover {
+			background-color: $purple;
+			color: $off-white;
+		}
 	}
 
 }

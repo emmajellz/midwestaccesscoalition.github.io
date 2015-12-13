@@ -284,6 +284,18 @@ section.ways-to-connect div.social-widgets {
     margin-right: 1.5em;
     margin: 4em 0;
 }
+
+#twitter {
+    max-width: 70%;
+    float: right;
+}
+
+#twitter-text {
+    float: left;
+    max-width: 30%;
+    text-align: center;
+    margin: 4em 0;
+}
 // END WIDGETS
 
 
@@ -292,7 +304,6 @@ section.ways-to-connect div.social-widgets {
  * Site footer
  */
 .site-footer {
-    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 
 }
@@ -304,32 +315,38 @@ section.ways-to-connect div.social-widgets {
 
 .footer-nav {
     display: inline-block;
-    // margin-left: -30px;
-    // margin-top: -140px;
-    // background: red;
     li {
         list-style: none;
     }
 }
 
 .contact-list {
-    // background: $off-white;
     list-style: none;
 }
+
 .social-media-list {
-    // background: blue;
     list-style: none;
-    margin-left: 0;
     float: right;
     li {
-        display: inline-block;
+        display: inline-block;  
+        padding: .75em;
+        border-radius: 50%;
+        float: right;
+        margin: .5em .25em;
+        background-color: lighten($chartreuse, 20%);
+        &:hover {
+            background: $purple;
+        }
+        // Why does this not work?
+        // a span.icon svg path{
+        //     color: $purple;
+        // }
     }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    // background: red;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
