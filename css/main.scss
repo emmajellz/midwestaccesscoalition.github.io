@@ -53,6 +53,14 @@ $on-laptop:        800px;
   border: $chartreuse-border;
 }
 
+@mixin clearfix { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

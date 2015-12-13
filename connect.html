@@ -6,4 +6,33 @@ nav_level: top
 nested_pages: team
 ---
 
-Learn how you can connect with MAC
+<h1>How can I connect with MAC?</h1>
+
+<section class="ways-to-connect">
+	<div id="contact-form">
+		<h3>You can join our email list...</h3>
+		<p>We'll let you know about upcoming volunteer trainings, fundraiser events like our MAC'n'cheese off, and other ways to get involved.</p>
+		{% include mailchimp.html %}
+	</div>
+</section>
+
+
+<section class="ways-to-connect">
+	<div class="social-widgets">
+		<h3 id="facebook-text">Follow us on Facebook...</h3>
+		{% include facebook.html %}
+	</div>
+</section>
+
+<section class="ways-to-connect">
+	<div class="social-widgets">
+		<h3>Show us some love on Twitter...</h3>
+		{% include twitter.html %}
+	</div>
+</section>
+
+<section class="ways-to-connect">
+	<div class="social-widgets">
+		{% include email_us.html %}
+	</div>
+</section>

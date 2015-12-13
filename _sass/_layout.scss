@@ -243,6 +243,50 @@
 }
 
 
+// WIDGETS
+
+// #facebook-iframe { 
+//     float: 
+// }
+
+#email-us-button {
+    // background-color: blue;
+}
+
+.social-widgets {
+    p {
+        padding: 2em;
+    }
+}
+
+.ways-to-connect {
+    padding: 2em;
+    margin: 1em auto;
+    &:hover {
+        background-color: $coral;
+    }
+    &:after {
+        @include clearfix;
+    }
+}
+
+section.ways-to-connect div.social-widgets {
+    h3 {
+        color: $purple;
+        font-size: 1.5em;
+        display: inline-block;
+    }
+}
+
+#facebook-text {
+    float: right;
+    max-width: 30%;
+    margin-right: 1.5em;
+    margin: 4em 0;
+}
+// END WIDGETS
+
+
 
 /**
  * Site footer

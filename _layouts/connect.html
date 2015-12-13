@@ -1,17 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  {% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <body>
+    <div id="nonFooter">
 
-{% include facebook.html %}
+      {% include header.html %}
 
-{% include twitter.html %}
+      <div class="page-content">
+        <div class="wrapper">
+          <div class="content-box">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+      {% include footer.html %}
+    </div>
 
-{% include contact.html %}
+  </body>
+
+</html>
