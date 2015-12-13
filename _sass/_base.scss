@@ -112,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     border: 1px;
     a {
+        color: $purple;
         font-family: $accent-font-family;
         font-size: 27px;
         position: relative;
@@ -123,7 +124,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     &:hover {
         background: $purple;
-        color: $off-white;
+        a {
+            color: darken($purple, 20%);
+        }
     }
 }
 
