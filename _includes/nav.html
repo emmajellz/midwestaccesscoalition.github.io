@@ -7,10 +7,24 @@
     </svg>
   </a>
 
+
+<!--   <div id="container">
+    <a class="mainNav" href="#" id="mainLink" onmouseover="rolloverMenu(1, 'mainMenu');" onmouseout="rolloverMenu(0, 'mainMenu');">Rollover Me</a>
+    <div class="rolloverMenu" id="mainMenu" style="display: none;" onmouseover="rolloverMenu(1, 'mainMenu');" onmouseout="rolloverMenu(0, 'mainMenu');">
+      <a href="#">Link 1</a><br />
+      <a href="#">Link 2</a><br />
+      <a href="#">Link 3</a><br />
+      <a href="#">Link 4</a>
+    </div>
+  </div> -->
+  
+
   <div class="trigger nav">
     <ul class="nav nav-pills">
       <li role="presentation" class="dropdown">
-        <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="#">about</a>
+<!--         <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="#">about</a> -->
+
+        <a class="page-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">about</a>
         <ul class="dropdown-menu">
           <li><a href="about.html">about</a></li>
           <li><a href="overview.html">overview</a></li>
@@ -24,7 +38,7 @@
         <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="support.html">get support</a>
       </li>
       <li role="presentation" class="dropdown">
-        <a class="page-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="how-to-help.html">how to help</a>
+        <a class="page-link dropdown-toggle" data-toggle="dropdown" href="how-to-help.html" role="button" aria-haspopup="true" aria-expanded="false">how to help</a>
         <ul class="dropdown-menu">
           <li><a href="volunteer.html">volunteer</a></li>
           <li><a href="donate.html">donate</a></li>
