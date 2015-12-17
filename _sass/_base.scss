@@ -101,29 +101,27 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.paypal-header {
-    background-color: red; 
-    float: right;
-}
-
 
 .sticky-btns {
     display: inline-block;
     background: lighten($chartreuse, 20%);
     color: $off-white;
-    // padding: 30px;
     width: 11em;
     height: 11em;
     border-radius: 50%;
     border: 1px;
-    a {
-        color: $purple;
-        font-family: $accent-font-family;
-        font-size: 27px;
+    .sticky-btn-text-container {
         position: relative;
-        top: 2.5em;
-        text-align: center;
-        // left: .97em;
+        top: 4em;
+        padding: 0 1.1em;
+        a {
+            color: $purple;
+            font-family: $accent-font-family;
+            font-size: 27px;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     &:hover {
         background: $purple;
