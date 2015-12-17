@@ -18,6 +18,7 @@
         @include box-link-styles;
         &:hover {
             padding-top: 20px;
+            margin-bottom: -20px;
         }
 
         // Gaps between nav items, but not on the first one
