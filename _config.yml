@@ -12,6 +12,11 @@ twitter_username: MidwestAccess
 github_username:  MidwestAccessCoalition
 facebook_username: midwestaccesscoalition
 
+#EVENT SETTINGS
+upcoming_event: true
+upcoming_event_eb_url: "http://eventbrite.com/tickets-external?eid=17602087317&ref=etckt"
+upcoming_event_img_path: "img/event-flyer.pdf"
+
 timezone: America/Chicago
 
 # pages_list:
