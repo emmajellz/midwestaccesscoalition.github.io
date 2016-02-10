@@ -101,6 +101,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+/**
+ * Centering
+*/
+
+.centered {
+    margin: 0 auto;
+    text-align: centered;
+}
+
+
+/**
+ * Eventbrite
+*/
+
+.eventbrite {
+    margin-top: 50px;
+}
+
+
+/**
+ * Big Sticky Buttons
+*/
+
 #middle-sticky-btn div a{
     margin-left: 20px;
 }
@@ -132,10 +155,6 @@ h1, h2, h3, h4, h5, h6 {
             color: darken($purple, 20%);
         }
     }
-}
-
-.centered {
-    margin: 0 auto;
 }
 
 
@@ -274,6 +293,11 @@ pre {
         fill: $purple;
     }
 }
+
+
+/**
+ * Paypal
+*/
 
 .paypal {
     a, form {
