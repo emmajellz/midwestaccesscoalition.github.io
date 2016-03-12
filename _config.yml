@@ -13,7 +13,7 @@ github_username:  MidwestAccessCoalition
 facebook_username: midwestaccesscoalition
 
 #EVENT SETTINGS
-upcoming_event: true
+upcoming_event: false
 upcoming_event_eb_url: "http://eventbrite.com/tickets-external?eid=19998356623&ref=etckt"
 upcoming_event_img_path: "img/event-flyer.pdf"
 
