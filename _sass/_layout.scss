@@ -117,12 +117,11 @@ a.selectedRollover{
 }
 
 .site-title {
-    .site-title-text{
-        display:none;
-    }
-    &,
     &:visited {
         color: $grey-color-dark;
+    }
+    .site-title-text{
+        display: none;
     }
     @extend %clearfix;
     @include media-query($on-palm) {
@@ -133,7 +132,9 @@ a.selectedRollover{
             display:none;
         }
         .site-title-text{
+            text-align: left;
             display: unset;
+            font-size: 1.2em;
         }
     }
 }

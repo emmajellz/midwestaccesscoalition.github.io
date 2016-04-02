@@ -11,6 +11,12 @@
     // border: $chartreuse solid 1px;
     // padding: 0 10px;
 
+    .navbar-nav {
+        li {
+            margin: 5px;
+            text-align: right;
+        }
+    }
     .page-link {
         @include box-link-styles;
         border-radius: 4px;
@@ -26,12 +32,18 @@
             margin: 8px;
         }
     }
+    .navbar-toggle {
+        background-color: #EEEEEE;
+        border: 1px solid #CCCC33;
+    }
+    .icon-bar {
+        background-color: #CCCC33;
+    }
 
     @include media-query($on-palm) {
-        background-color: $background-color;
+        background-color: none;
         // border: 1px solid $grey-color-light;
         border-radius: 5px;
-        text-align: right;
         ul {
             margin: unset;
         }
