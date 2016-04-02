@@ -1,17 +1,20 @@
 <aside class="sidebar">
-   {% if site.announcements %}
+  {% if site.announcements %}
   {% endif %}
-   {% if site.upcoming_event %}
-    <div class="sidebar-content">
-      {% include eventbrite.html %}
-    </div>
-  {% endif %}
-  <div class="sidebar-content facebook-feed">
-  <script>
-  $(window).resize(function(){
-    windowsize = $(window).width();
-    $('aside').css('width', (windowsize/ 4.75));
-  });
-  </script>
+  {% if site.upcoming_event %}
+  <div class="sidebar-content">
+    {% include eventbrite.html %}
   </div>
+  {% endif %}
+  <div class="sidebar-content">
+    {% include twitter.html %}
+  </div>
+  <script>
+    var windowsize = $(window).width();
+    $('aside').css('width', (windowsize/ 4.75));
+    $(window).resize(function(){
+      windowsize = $(window).width();
+      $('aside').css('width', (windowsize/ 4.75));
+    });
+  </script>
 </aside>
