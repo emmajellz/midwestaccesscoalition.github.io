@@ -185,6 +185,13 @@ a.selectedRollover{
     padding: 20px;
 }
 
+.event-brite-content-box{
+    display: none;
+    @media(max-width: 1200px) {
+        display:inherit;
+    }
+}
+
 
 
 /**
