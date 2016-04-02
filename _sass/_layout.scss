@@ -127,7 +127,7 @@ a.selectedRollover{
     @include media-query($on-palm) {
         display: table-cell;
         float: left;
-        width: 50%;
+        width: 75%;
         img{
             display:none;
         }

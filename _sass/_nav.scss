@@ -88,3 +88,19 @@
         }
     }
 }
+.dropdown-menu {
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 4px;
+    border: $chartreuse-border;
+    background-color: $light-grey;
+}
+.open {
+    border: $chartreuse-border;
+    background-color: $light-grey;    
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    text-align: right;
+    border-radius: 4px;
+}
