@@ -290,19 +290,24 @@ section.ways-to-connect div.social-widgets {
 }
 
 #facebook-text {
-    margin-right: 1.5em;
+    text-align: center;
+    padding: 1em 0;
 }
 
 #twitter {
-    // max-width: 70%;
-    // float: right;
+    //margin: auto;
 }
 
 #twitter-text {
-    // float: left;
-    // max-width: 30%;
     text-align: center;
-    margin: 1em 0;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#get-in-touch-text {
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    width: 100%;
 }
 // END WIDGETS
 
