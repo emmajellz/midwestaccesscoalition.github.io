@@ -13,10 +13,18 @@
 
     .page-link {
         @include box-link-styles;
+        border-radius: 4px;
     }
 
     .nav-label{
         display: none;
+    }
+
+    .nav-items{
+        li{
+            float:left;
+            margin: 8px;
+        }
     }
 
     @include media-query($on-palm) {
