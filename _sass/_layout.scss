@@ -10,81 +10,6 @@
 }
 
 
-// SITE NAV
-
-.trigger-nav {
-    float: right;
-    display: inline-block;
-}
-
-.site-nav {
-    display: block;
-    line-height: 56px;
-    // border: $chartreuse solid 1px;
-    // padding: 0 10px;
-
-    .menu-icon {
-        display: none;
-        background-color: $off-white;
-    }
-
-    .page-link {
-        @include box-link-styles;
-        &:hover {
-            padding-top: 20px;
-        }
-
-        // Gaps between nav items, but not on the first one
-        // &:not(:first-child) {
-        //     margin-left: 20px;
-        // }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        left: 30px;
-        background-color: $background-color;
-        // border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: left;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
-
 // DROPDOWN
 
 #container{
@@ -167,8 +92,8 @@ a.selectedRollover{
     //     &:nth-child(2) {
     //         top: 80px;
     //         @include media-query($on-palm) {
-    //             right: 150px;   
-    //             top: 9px; 
+    //             right: 150px;
+    //             top: 9px;
     //         }
     //     }
     //     @include media-query($on-palm) {
@@ -178,6 +103,13 @@ a.selectedRollover{
     @include media-query($on-palm) {
         background-color: $off-white;
         border-bottom: $chartreuse solid 2px;
+        .nav-bar{
+            position: fixed;
+            display: table;
+            width: 100%;
+            text-align: center;
+            margin: unset;
+        }
         img {
             display: none;
         }
@@ -185,19 +117,24 @@ a.selectedRollover{
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    // float: left;
-
+    .site-title-text{
+        display:none;
+    }
     &,
     &:visited {
         color: $grey-color-dark;
     }
     @extend %clearfix;
     @include media-query($on-palm) {
-        margin-left: 100px;
+        display: table-cell;
+        float: left;
+        width: 50%;
+        img{
+            display:none;
+        }
+        .site-title-text{
+            display: unset;
+        }
     }
 }
 
@@ -300,8 +237,8 @@ a.selectedRollover{
 
 // WIDGETS
 
-// #facebook-iframe { 
-//     float: 
+// #facebook-iframe {
+//     float:
 // }
 
 #email-us-button {
@@ -385,7 +322,7 @@ section.ways-to-connect div.social-widgets {
     list-style: none;
     float: right;
     li {
-        display: inline-block;  
+        display: inline-block;
         padding: .75em;
         border-radius: 50%;
         float: right;

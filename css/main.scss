@@ -53,11 +53,11 @@ $on-laptop:        800px;
   border: $chartreuse-border;
 }
 
-@mixin clearfix { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
+@mixin clearfix {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
    clear: both;
 }
 
@@ -67,6 +67,7 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "nav",
         "syntax-highlighting",
         "form_styles"
 ;
