@@ -10,6 +10,9 @@
 
       <div class="page-content">
         <div class="wrapper">
+          <div class="sidebar">
+            {% include sidebar.html %}
+          </div>
           <div class="content-box">
             {{ content }}
             {% include buttons.html %}
@@ -22,7 +25,7 @@
         </div>
       </div>
     </div>
-    
+
     <div id="footer">
       {% include footer.html %}
     </div>

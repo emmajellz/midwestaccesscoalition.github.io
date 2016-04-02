@@ -1,0 +1,45 @@
+<aside class="sidebar">
+  <h3>I'm the sidebar!</h3>
+  <!-- {% if site.announcements %}
+  {% endif %} -->
+  <!-- {% if site.upcoming_event %}
+    <div class="sidebar-content">
+      {% include eventbrite.html %}
+    </div>
+  {% endif %} -->
+  <div class="sidebar-content facebook-feed">
+    <h1>WOOORDS</h1>
+    <script>
+      $(document).ready(function() {
+        var top = 306;
+        $(window).scroll(function(event) {
+          // what the y position of the scroll is
+          var y = $(this).scrollTop();
+          // whether that's below the form
+          if (y >= top) {
+            // if so, add the fixed class
+            $('.sidebar').css({'position':'fixed','top':'4em'});
+          } else {
+            // otherwise remove it
+            $('.sidebar').css({'position':'absolute', 'top':'inherit'});
+
+          }
+        });
+      });
+
+      var facebookAPI = "http://graph.facebook.com/midwestaccesscoalition/posts";
+
+      $.getJSON(facebookAPI, function(data) {
+        var items = [];
+        $.each(data, function(key, val) {
+          items.push("<li id='" + key + "'>" + val + "</li>");
+        });
+
+        $("<ul/>", {
+          "class": "my-new-list",
+          html: items.join("")
+        }).appendTo(".facebook-feed");
+      });
+    </script>
+  </div>
+</aside>

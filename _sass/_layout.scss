@@ -167,8 +167,8 @@ a.selectedRollover{
     //     &:nth-child(2) {
     //         top: 80px;
     //         @include media-query($on-palm) {
-    //             right: 150px;   
-    //             top: 9px; 
+    //             right: 150px;
+    //             top: 9px;
     //         }
     //     }
     //     @include media-query($on-palm) {
@@ -202,7 +202,6 @@ a.selectedRollover{
 }
 
 
-
 /**
  * Page content
  */
@@ -213,8 +212,8 @@ a.selectedRollover{
 
 .wrapper .page-content {
     background-color: $background-color;
-    border: $chartreuse-border;
     margin: 30px 40px;
+    border: $chartreuse-border;
     width: 90%;
 }
 
@@ -241,6 +240,21 @@ a.selectedRollover{
     font-size: 24px;
 }
 
+@media (min-width: 1200px){
+  .sidebar {
+    position: absolute;
+    right: 3%;
+    .sidebar-content {
+
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .sidebar {
+      display: none
+  }
+}
 
 .content-box {
     background-color: $background-color;
@@ -300,8 +314,8 @@ a.selectedRollover{
 
 // WIDGETS
 
-// #facebook-iframe { 
-//     float: 
+// #facebook-iframe {
+//     float:
 // }
 
 #email-us-button {
@@ -385,7 +399,7 @@ section.ways-to-connect div.social-widgets {
     list-style: none;
     float: right;
     li {
-        display: inline-block;  
+        display: inline-block;
         padding: .75em;
         border-radius: 50%;
         float: right;
@@ -487,4 +501,3 @@ position: relative;
 margin-top: -2em;
 background: $chartreuse;
 }
-
