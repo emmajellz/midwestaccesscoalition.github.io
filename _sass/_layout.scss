@@ -139,7 +139,6 @@ a.selectedRollover{
 }
 
 
-
 /**
  * Page content
  */
@@ -150,8 +149,8 @@ a.selectedRollover{
 
 .wrapper .page-content {
     background-color: $background-color;
-    border: $chartreuse-border;
     margin: 30px 40px;
+    border: $chartreuse-border;
     width: 90%;
 }
 
@@ -178,6 +177,21 @@ a.selectedRollover{
     font-size: 24px;
 }
 
+@media (min-width: 1200px){
+  .sidebar {
+    position: absolute;
+    right: 3%;
+    .sidebar-content {
+
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .sidebar {
+      display: none
+  }
+}
 
 .content-box {
     background-color: $background-color;
@@ -252,8 +266,8 @@ a.selectedRollover{
 }
 
 .ways-to-connect {
-    padding: 2em;
-    margin: 1em auto;
+    // padding: 2em;
+    // margin: 1em auto;
     &:hover {
         background-color: $coral;
     }
@@ -271,22 +285,19 @@ section.ways-to-connect div.social-widgets {
 }
 
 #facebook-text {
-    float: right;
-    max-width: 30%;
     margin-right: 1.5em;
-    margin: 4em 0;
 }
 
 #twitter {
-    max-width: 70%;
-    float: right;
+    // max-width: 70%;
+    // float: right;
 }
 
 #twitter-text {
-    float: left;
-    max-width: 30%;
+    // float: left;
+    // max-width: 30%;
     text-align: center;
-    margin: 4em 0;
+    margin: 1em 0;
 }
 // END WIDGETS
 
@@ -424,4 +435,3 @@ position: relative;
 margin-top: -2em;
 background: $chartreuse;
 }
-
