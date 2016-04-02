@@ -5,3 +5,19 @@ aside {
   border-radius: 5px;
   padding: $spacing-unit 0.5em;
 }
+
+@media (min-width: 1200px){
+  .sidebar {
+    position: absolute;
+    right: 3%;
+    .sidebar-content {
+
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .sidebar {
+      display: none
+  }
+}

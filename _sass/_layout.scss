@@ -178,22 +178,6 @@ a.selectedRollover{
     font-size: 24px;
 }
 
-@media (min-width: 1200px){
-  .sidebar {
-    position: absolute;
-    right: 3%;
-    .sidebar-content {
-
-    }
-  }
-}
-
-@media (max-width: 1200px){
-  .sidebar {
-      display: none
-  }
-}
-
 .content-box {
     background-color: $background-color;
     border: $chartreuse-border;
