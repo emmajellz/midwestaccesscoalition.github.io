@@ -120,6 +120,9 @@ a.selectedRollover{
     &:visited {
         color: $grey-color-dark;
     }
+    .site-title-text{
+        display: none;
+    }
     @extend %clearfix;
     @include media-query($on-palm) {
         display: table-cell;
