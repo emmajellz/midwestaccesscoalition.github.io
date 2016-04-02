@@ -45,6 +45,14 @@
             text-align: center;
         }
 
+        .nav-items{
+            width:100%;
+            li{
+                float: unset;
+                margin: unset;
+            }
+        }
+
         .trigger {
             clear: both;
             display: none;
@@ -56,13 +64,9 @@
 
         .page-link {
             display: block;
+            border-radius: unset;
         }
 
-        .nav-pills-custom{
-            display: block;
-            position: relative;
-            float: unset;
-        }
 
         .nav li{
             position: relative;
