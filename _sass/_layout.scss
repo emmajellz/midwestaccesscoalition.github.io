@@ -329,8 +329,8 @@ a.selectedRollover{
 }
 
 .ways-to-connect {
-    padding: 2em;
-    margin: 1em auto;
+    // padding: 2em;
+    // margin: 1em auto;
     &:hover {
         background-color: $coral;
     }
@@ -348,22 +348,19 @@ section.ways-to-connect div.social-widgets {
 }
 
 #facebook-text {
-    float: right;
-    max-width: 30%;
     margin-right: 1.5em;
-    margin: 4em 0;
 }
 
 #twitter {
-    max-width: 70%;
-    float: right;
+    // max-width: 70%;
+    // float: right;
 }
 
 #twitter-text {
-    float: left;
-    max-width: 30%;
+    // float: left;
+    // max-width: 30%;
     text-align: center;
-    margin: 4em 0;
+    margin: 1em 0;
 }
 // END WIDGETS
 
