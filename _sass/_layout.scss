@@ -274,9 +274,9 @@ a.selectedRollover{
 .ways-to-connect {
     // padding: 2em;
     // margin: 1em auto;
-    &:hover {
-        background-color: $coral;
-    }
+    //&:hover {
+    //    //background-color: $coral;
+    //}
     &:after {
         @include clearfix;
     }
