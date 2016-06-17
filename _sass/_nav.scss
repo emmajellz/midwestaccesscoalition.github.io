@@ -4,11 +4,16 @@
     display: inline-block;
 }
 
+.nav .open>a:active, .nav .open>a:focus, .nav .open>a:hover {
+    border: $chartreuse-border;
+}
+
 .site-nav {
     display: block;
     width: 100%;
     // border: $chartreuse solid 1px;
     // padding: 0 10px;
+    border-radius: 4px;
 
     .navbar-nav {
         li {
@@ -96,7 +101,6 @@
     background-color: $light-grey;
 }
 .open {
-    border: $chartreuse-border;
     background-color: $light-grey;    
 }
 .dropdown:hover .dropdown-menu {
